@@ -81,6 +81,4 @@ test:
 #
 production:
   <<: *default
-  database: monad_production
-  username: monad
-  password: <%= ENV["MONAD_DATABASE_PASSWORD"] %>
+  url: <%= ENV['DATABASE_URL'] %>
